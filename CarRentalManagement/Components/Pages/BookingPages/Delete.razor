@@ -1,8 +1,10 @@
 ﻿@page "/bookings/delete"
 @using Microsoft.EntityFrameworkCore
 @using CarRentalManagement.Domain
+@using Microsoft.AspNetCore.Authorization
 @inject IDbContextFactory<CarRentalManagement.Data.CarRentalManagementContext> DbFactory
 @inject NavigationManager NavigationManager
+@attribute [Authorize(Roles = "Administrator")]
 
 <PageTitle>Delete</PageTitle>
 
