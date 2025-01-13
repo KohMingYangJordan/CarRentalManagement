@@ -71,7 +71,7 @@
     {
         var vehicle = Vehicles.FirstOrDefault(v => v.Id == vehicleId);
         return vehicle == null ? string.Empty :
-        $"{MakesDict[vehicle.MadeId].Name} {ModelsDict[vehicle.ModelId].Name}{ColoursDict[vehicle.ColourId].Name}";
+        $"{MakesDict[vehicle.MadeId].Name} {ModelsDict[vehicle.ModelId].Name} {ColoursDict[vehicle.ColourId].Name}";
     }
     // GetCustomerString method to get the customer string
     private string GetCustomerString(int customerId)
